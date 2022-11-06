@@ -9,7 +9,6 @@
   "author": "Skyz",
   "license": "UNLICENSED",
   "private": true,
-  "packageManager": "yarn@3.1.1",
   "devDependencies": {
     "@types/node": "^17.0.14",
     "@typescript-eslint/eslint-plugin": "^5.10.2",
