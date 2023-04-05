@@ -1,10 +1,10 @@
-import { Client } from 'discord.js';
+import { Client, GatewayIntentBits } from 'discord.js';
 import 'dotenv/config';
 import { interactionCreateListener } from './discord/listeners/InteractionCreateListener';
 import { readyListener } from './discord/listeners/ReadyListener';
 
 export const client = new Client({
-  intents: ['GUILDS'],
+  intents: [GatewayIntentBits.Guilds],
 });
 
 client.on('interactionCreate', interactionCreateListener);
